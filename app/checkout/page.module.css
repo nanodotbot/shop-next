@@ -1,0 +1,117 @@
+.main {
+    min-height: calc(100vh - 171px);
+    width: 700px;
+    max-width: 95vw;
+    margin: var(--default-gap) auto;
+}
+.imgwrapper {
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+.empty {
+    text-align: center;
+    margin: 0;
+    margin-top: var(--default-gap);
+}
+.hr {
+    padding: 0;
+    margin: var(--default-gap) 0;
+}
+.article {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: var(--default-gap);
+
+    padding: var(--default-gap) 0;
+    margin: 0;
+    /* border-top: .1rem solid var(--background);
+    border-bottom: .1rem solid var(--background); */
+}
+.productMeta {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    align-items: space-between;
+}
+
+.unit_amount_meta {
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+    justify-items: center;
+}
+.unit_amount_meta > button {
+    width: calc(2 * var(--default-gap));
+    padding: 0;
+    margin: 0;
+}
+.name, .unit_amount {
+    padding: 0;
+    margin: 0;
+}
+.unit_amount {
+    min-width: calc(3 * var(--default-gap));
+
+    text-align: center;
+}
+
+.calculation {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    align-content: end;
+    justify-content: end;
+    gap: calc(2 * var(--default-gap));
+}
+.calculation > p, .calculation > div {
+    padding: 0;
+    margin: 0;
+
+    text-align: right;
+}
+.calculated {
+    min-width: calc(6 * var(--default-gap));
+    padding: 0;
+    margin: 0;
+
+    text-align: right;
+    font-weight: bold;
+}
+.overall {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+}
+.total {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+    .imgwrapper {
+        height: 120px;
+        width: 120px;
+    }
+    .name {
+        font-size: var(--font-size-small);
+    }
+    .unit_amount {
+        font-size: calc(0.9 * var(--font-size-small));
+        padding-top: calc(var(--default-gap) / 4);
+    }    
+    .description {
+        font-size: var(--font-size-smallest);
+    }
+    .calculated {
+        font-size: var(--font-size-small);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .calculation {
+        display: block;
+    }
+    .unit_amount_meta, .calculation > div {
+        grid-template-columns: min-content min-content min-content;
+        justify-content: end;
+
+        margin-bottom: calc(var(--default-gap) / 2);
+    }
+    
+}

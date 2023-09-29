@@ -4,8 +4,4 @@
     max-width: 95vw;
     margin: var(--default-gap) auto;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: space-between;
-    align-items: center;
 }

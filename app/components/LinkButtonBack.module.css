@@ -1,0 +1,13 @@
+.button {
+    width: min-content;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: calc(var(--default-gap) / 2);
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.button:hover > span {
+    color: var(--link-hover-text);
+    background-color: var(--link-hover-bg);
+}

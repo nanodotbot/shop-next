@@ -1,0 +1,27 @@
+.wrapper {
+    display: grid;
+}
+
+.dialog > .wrapper > span {
+    justify-self: end;
+    align-self: end;
+
+    width: min-content;
+    font-size: var(--font-size-largest);
+}
+.h2 {
+    font-size: 3.2rem;
+}
+.h3 {
+    font-size: 3rem;
+}
+.h4 {
+    font-size: 2.8rem;
+}
+.hr {
+    padding: 0;
+    margin: var(--default-gap) 0;
+}
+.nav {
+    width: 100%;
+}

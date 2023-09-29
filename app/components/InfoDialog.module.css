@@ -1,0 +1,17 @@
+.techWrapper {
+    margin-bottom: var(--default-gap);
+}
+.tech {
+    margin: 0;
+}
+
+.main {
+    display: grid;
+}
+.dialog > .main > span {
+    justify-self: end;
+    align-self: end;
+
+    width: min-content;
+    font-size: var(--font-size-largest);
+}
