@@ -15,10 +15,6 @@ import InfoDialog from './components/InfoDialog';
 
 const karla = Karla({ subsets: ['latin'] });
 
-export const metadata = {
-    title: 'Buy pets',
-    description: 'Buy pets and other stuff',
-}
 let sessionItems = [];
 
 export default function RootLayout({ children }) {
