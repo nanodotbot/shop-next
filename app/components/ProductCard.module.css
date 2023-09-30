@@ -12,6 +12,7 @@
     background-color: var(--background);
     /* border-top: .1rem solid var(--input-focus-border);
     border-bottom: .1rem solid var(--input-focus-border); */
+    cursor: context-menu;
 }
 .imgwrapper {
     position: relative;
