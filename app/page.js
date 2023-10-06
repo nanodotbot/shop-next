@@ -4,8 +4,8 @@ import { getStripeItems } from './actions';
 import Items from './components/Items';
 
 export const metadata = {
-    title: 'Buy pets',
-    description: 'Buy pets and other stuff',
+    title: 'Onlineshop',
+    description: 'Shop für kleine, niedliche Tiere',
 }
 
 export default async function Home() {
