@@ -15,3 +15,18 @@
     width: min-content;
     font-size: var(--font-size-largest);
 }
+.pictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: calc(var(--default-gap) / 4);
+}
+.pictures > p {
+    width: auto;
+    margin: 0;
+    border: var(--border);
+}
+.pictures > p > a {
+    display: block;
+    padding: calc(var(--default-gap) / 4) var(--default-gap);
+}
