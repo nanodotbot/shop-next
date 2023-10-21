@@ -26,7 +26,7 @@ const InfoDialog = ({getOpen}) => {
                 <p>Beim Erstellen der Seite sind keinerlei Tiere zu Schaden gekommen.</p>
                 <p>Das Ziel des Projekts war lediglich die Einbindung der Stripe-Zahlungsseite, unterdessen hat der Shop allerdings etwas an Funktionalität dazugewonnen.</p>
                 <p>Für Testzahlungen können die folgende Kreditkartennummer und anonyme, erfundene Angaben verwendet werden:<br />4242 4242 4242 4242</p>
-                <h2>Verwendete Bilder:</h2>
+                <h2>Verwendete Bilder</h2>
                 <div className={styles.pictures}>
                     <p><a href="https://unsplash.com/de/fotos/gelbe-gummiente-auf-weissem-grund-LhqLdDPcSV8" target="_blank" rel="noopener noreferrer">Gummiente | Timothy Dykes</a></p>
                     <p><a href="https://www.pexels.com/de-de/foto/nahaufnahmefoto-von-kuken-2695703/" target="_blank" rel="noopener noreferrer">Küken | Adil</a></p>
