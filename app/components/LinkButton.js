@@ -1,4 +1,4 @@
-import styles from './LinkButtonBack.module.css'
+import styles from './LinkButton.module.css'
 import 'material-symbols/outlined.css';
 import { useRouter } from "next/navigation";
 

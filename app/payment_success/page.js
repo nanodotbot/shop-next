@@ -5,11 +5,6 @@ import LinkButton from "../components/LinkButton"
 import { useEffect } from "react"
 import useCartStore from '../storeCart';
 
-export const metadata = {
-    title: 'MiauMiau',
-    description: 'Shop für kleine, niedliche Tiere',
-}
-
 const paymentSuccess = () => {
     const setCartItems = useCartStore(state => state.setCartItems);
     useEffect(() => {

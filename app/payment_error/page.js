@@ -1,10 +1,5 @@
 import Link from "next/link"
 
-export const metadata = {
-    title: 'MiauMiau',
-    description: 'Shop für kleine, niedliche Tiere',
-}
-
 const paymentError = () => {
     return (
         <div>

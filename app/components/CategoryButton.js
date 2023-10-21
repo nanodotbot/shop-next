@@ -1,4 +1,4 @@
-import styles from './LinkButtonBack.module.css'
+import styles from './CategoryButton.module.css'
 
 const CategoryButton = ({className, handleClick, buttonText}) => {
     return (

@@ -4,11 +4,6 @@ import { getStripeItems } from './actions';
 import Items from './components/Items';
 import Header from './components/Header';
 
-export const metadata = {
-    title: 'MiauMiau',
-    description: 'Shop für kleine, niedliche Tiere',
-}
-
 export default async function Home() {
     const fetchItems = () => {
         const items = getStripeItems();

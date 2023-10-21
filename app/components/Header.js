@@ -6,7 +6,7 @@ const Header = () => {
 
             <div>
                 <h1 id="function">MiauMiau</h1>
-                <p>– dein Shop für kleine, niedliche Gefährten</p>
+                <p>– dein Shop für kleine, niedliche Freunde</p>
             </div>
 
         </header>
