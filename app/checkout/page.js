@@ -20,7 +20,7 @@ const handleCheckout = async items => {
     window.location.assign(url);
 }
 
-const cart = () => {
+const cart = () => {    
     const [items, setItems] = useState([]);
     const setCartItems = useCartStore(state => state.setCartItems);
 
@@ -164,6 +164,11 @@ const cart = () => {
                 <p>Insgesamt</p>
                 <p className={styles.total}>{items.reduce((total, item) => total + item.quantity  * (item.item.unit_amount/100), 0).toLocaleString('de-CH')}.–</p>
             </div>}
+            <p className={styles.dataprotection}>Für Testzahlungen können die folgende Kreditkartennummer und anonyme, erfundene Angaben verwendet werden:<br/>
+4242 4242 4242 4242<br/>
+Jede Zahlung wird auf Seite des Zahlungsservices Stripe registriert und gespeichert. Die Datenschutzerklärung von Stripe ist über folgenden Link aufrufbar:<br/>
+<a href="https://stripe.com/at/privacy" target="_blank" rel="noopener noreferrer">Stripe, Datenschutzerklärung</a>
+</p>
             {items?.length !== 0 && <button onClick={() => handleCheckout(countedUnique)}>Zur Zahlungsseite</button>}
         </main>
     )

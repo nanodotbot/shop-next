@@ -42,6 +42,10 @@
     --green-default: #9fe2bf;
     --red-default: #eecec9;
 
+    --blue-default-transparent: rgba(174, 221, 237, .5);
+    --green-default-transparent: rgba(159, 226, 191, .5);
+    --red-default-transparent: rgba(238, 206, 201, .5);
+
     --yellow-default: #fbedc3;
 
     /* light input focus */
@@ -61,7 +65,10 @@
     --error: #f44336;
     --neutral: #2196f3;
 
+    --error: #f44336;
+    --error-light: #f55449;
     --error-lighter: #f99a93;
+    --error-lightest: #faaba6;
 
     --success-lightest: #e1f2e2;
     --error-lightest: #fef1f0;
@@ -76,7 +83,7 @@
     --theme-independent-light-text: var(--white);
 
     --background-transparent-dark: rgba(9, 9, 9, .8);
-    --background-transparent-light: rgba(255, 255, 255, .95);
+    --background-transparent-light: rgba(255, 255, 255, .75);
     --background-transparent-theme: var(--background-transparent-light);
 
     --text: var(--black);
@@ -104,7 +111,8 @@
     --input-text: var(--text);
     --input-border: var(--grey-lighter);
     --input-focus-border: var(--blue-darker);
-    
+    --input-border-warning: var(--error-light);
+
     --toggle-height: 2rem;
     --toggle-width: calc(var(--toggle-height) * 2);
     --toggle-border-radius: calc(var(--toggle-height) / 2);
@@ -445,7 +453,7 @@ dialog {
     width: 100vw;
     border: none;
 
-    background-color: var(--background-transparent-theme);
+    background-color: var(--background);
     z-index: 2;
     transition: var(--transition-slow);
 }

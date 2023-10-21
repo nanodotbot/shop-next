@@ -1,0 +1,39 @@
+.header {
+    padding: calc(2 * var(--default-gap)) 0;
+    margin-bottom: calc(2 * var(--default-gap));
+    background-image: url('../../public/clement-falize-b9K_LTz079c-unsplash.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header > div {
+    width: 700px;
+    max-width: 96vw;
+    margin: 0 auto;
+}
+
+.header > div > h1,
+.header > div > p {
+    /* width: max-content; */
+    text-align: center;
+    margin: 0 auto;
+
+    color: var(--white);
+    background-color: var(--background-transparent-dark);
+}
+
+.header > div > h1 {
+    font-size: calc(3rem + 3vw);
+}
+
+.header > div > p {
+    font-size: 2rem;
+    padding-bottom: var(--default-gap);
+}
+
+@media screen and (max-width: 350px) {
+    .header > div > p {
+        width: auto;
+    }
+}

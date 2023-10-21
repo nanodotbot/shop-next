@@ -83,6 +83,11 @@
     font-weight: bold;
 }
 
+.dataprotection {
+    padding: var(--default-gap);
+    border: .1rem solid var(--input-border-warning);
+}
+
 @media screen and (max-width: 450px) {
     .imgwrapper {
         height: 120px;

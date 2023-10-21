@@ -43,9 +43,8 @@ const ProductCard = ({ item }) => {
     // }, [cartItems])
 
     return (
-        <article key={item.product.id}>
-            <hr className={styles.hr} />
-            <Link className={styles.article} href='/'>
+        <article className={styles.articles} key={item.product.id}>
+            {/* <Link className={styles.article} href='/'> */}
                 <div className={styles.imgwrapper}>
                     <Image
                         src={item.product.images[0]}
@@ -64,7 +63,7 @@ const ProductCard = ({ item }) => {
                         <span className="material-symbols-outlined" onClick={e => addToCart(e, item)}>shopping_cart</span>
                     </div>
                 </div>
-            </Link>
+            {/* </Link> */}
         </article>
     )
 }

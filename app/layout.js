@@ -89,6 +89,9 @@ export default function RootLayout({ children }) {
                 {children}
                 <footer className={styles.footer}>
                     <a href="http://notanumber.ch" target="_blank" rel="noopener noreferrer">notanumber.ch</a>
+
+
+                    
                 </footer>
                 <InfoDialog getOpen={openInfo} />
             </body>

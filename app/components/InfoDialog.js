@@ -24,9 +24,7 @@ const InfoDialog = ({getOpen}) => {
                 <span className="material-symbols-outlined" onClick={close}>close</span>
                 <h1>Ein paar Infos</h1>
                 <p>Beim Erstellen der Seite sind keinerlei Tiere zu Schaden gekommen.</p>
-                <p>Für Testzahlungen kann die folgende Kreditkartennummer verwendet werden:<br />4242 4242 4242 4242</p>
-                <p>&laquo;Bug reports&raquo; und &laquo;Feature requests&raquo; nehme ich gerne entgegen.</p>
-                <p>GitHub-Repos teile ich auf Anfrage.</p>
+                <p>Für Testzahlungen können die folgende Kreditkartennummer und anonyme, erfundene Angaben verwendet werden:<br />4242 4242 4242 4242</p>
             </div>
         </dialog>
     )

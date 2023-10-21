@@ -2,9 +2,10 @@ import styles from './page.module.css'
 import CategoryDialog from './components/CategoryDialog';
 import { getStripeItems } from './actions';
 import Items from './components/Items';
+import Header from './components/Header';
 
 export const metadata = {
-    title: 'Onlineshop',
+    title: 'MiauMiau',
     description: 'Shop für kleine, niedliche Tiere',
 }
 
@@ -16,10 +17,13 @@ export default async function Home() {
     const items = await fetchItems();
 
     return (
-        <main className={styles.main}>
-            <Items items={items} />
-            <CategoryDialog />
-        </main>
+        <div>
+            <Header />
+            <main className={styles.main}>
+                <Items items={items} />
+                <CategoryDialog />
+            </main>
+        </div>
         
     )
 }
