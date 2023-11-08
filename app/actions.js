@@ -23,8 +23,8 @@ export const checkout = async (arrayOfObjects) => {
             //     },
             // ],
             mode: 'payment',
-            success_url: `http://localhost:3000/payment_success`,
-            cancel_url: `http://localhost:3000/checkout`,
+            success_url: `https://main.d39sz03c4cgqx1.amplifyapp.com/payment_success`,
+            cancel_url: `https://main.d39sz03c4cgqx1.amplifyapp.com/checkout`,
         })
         return session.url;        
     } catch (error) {
