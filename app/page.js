@@ -13,7 +13,7 @@ export default async function Home() {
 
     return (
         <div>
-            <Header />
+            {/* <Header /> */}
             <main className={styles.main}>
                 <Items items={items} />
                 <CategoryDialog />
